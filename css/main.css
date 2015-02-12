@@ -1,33 +1,82 @@
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
 
+
 html{
-    background: #d6d6d6;
+    background: #ccc;
     font-family: 'Source Sans Pro', sans-serif;
     margin: 0;
     padding: 0; 
+    min-width: 500px;
+    height: 100%;
+
 }
+body{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1000px;
+    background: #d6d6d6;
+    width: 100%;
+    height: 100%;
+}
+
 header{
-    margin: 2px;
     position: relative;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
     cursor: default;
+
 }
 header #title{
     display: inline-block;
     font-weight: 100;
     font-size: 42px;
-    letter-spacing: 9px;
-    line-height: 100px;
+    letter-spacing: 10px;
+    line-height: 92px;
     margin-left: 3%;
+    padding-bottom: 7px;
 }
 header #black-square{
     position: absolute;
     display: inline-block;
     right: 0;
-    width: 100;
-    height: 100;
+    width: 90px;
+    height: 90px;
+    margin: 4px 4px 0 0;
     background: black;
 }
+#loading-bar{
+    width: 100%x;
+    height: 2px;
+    background: black;
+}
+nav ul{
+    display: inline-block;
+    margin: 1px 2px;
+    padding: 0;
+}
+nav ul li{
+    display: inline-block;
+    margin: 0 -2px;
+    padding: 0;
+}
+
+input {
+    background: black;
+    outline: none;
+    border: none;
+    color: #d6d6d6;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 2px;
+    height: 28px;
+    font-size: 1.2rem;
+    line-height: 28px;
+}
+input:hover{
+    border-bottom: 4px solid white;
+}
+nav ul .last-item:hover{
+    border-bottom: 4px solid red;
+}
+/* Optimize http://devilo.us/ */
