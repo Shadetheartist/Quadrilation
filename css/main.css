@@ -108,11 +108,13 @@ input:hover{
 
 /* Chrome, Safari, Opera */
 @-webkit-keyframes cylinder {
-    0%   {height: 0px; background: red;}
-    100% {height: 100px; background: white;}
+    0%   {height: 0px; background: red; opacity: 0.1;}
+    100% {height: 100px; background: white; opacity: 0.2;}
 }
 
+#gameCanvas{
 
+}
 
 
 
